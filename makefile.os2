@@ -7,7 +7,7 @@
 CC      = g++
 
 # os2fix.h neutralizes legacy OS/2 memory-model keywords (_far, _near, _huge,
-# _FAR_).  Shadow headers in project root are intercepted via "-I .":
+# _FAR_).  Shadow headers in sources/ are intercepted via "-I sources":
 #   errno.h  — prevents conflict between GCC's include-fixed/stdlib.h and
 #              the OS/2 system errno.h (re-declares errno with _near).
 #   ctype.h  — provides character classification macros (isdigit, tolower,
@@ -50,7 +50,7 @@ TARGET  = 2h4u.exe
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CC) $(LDFLAGS) -o $@ $(OBJS) $(LIBS)
+	$(CC) $(LDFLAGS) -o $@ $(OBJS) $(LIBS) sources/2h4u.def
 
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<

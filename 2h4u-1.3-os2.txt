@@ -1,0 +1,27 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+
+        Archive Filename: 2h4u-1.3-os2.zip
+       Short Description: 2H4U Game for OS/2.
+        Long Description: 2H4U, which stands for Too Hard For You, is an open source game, and a mix between a Tetris-like game and a wall breaker. It requires good reflexes, coordination, and ambidexters should have some advantages. Will 2H4U be too hard for you ?
+
+      Proposed directory
+           for placement: /pub/os2/games
+
+               Your name: Gianfilippo Cimmino 
+           Email address: gianfi dot cim at gmail dot com
+    Program contact name: (same)
+   Program contact email: (same)
+             Program URL: https://sourceforge.net/p/toohardforyou/
+
+      Would you like the
+   contact email address
+    included in listings? no
+
+Operating System/Version: OS/2 Warp 4.5, eCS, ArcaOS
+ Additional requirements: GCC core (4.9.2), GCC runtime (0.6.6)
+
+                Replaces: 
+
+
+
