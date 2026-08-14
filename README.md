@@ -31,6 +31,10 @@ http://gpwiki.org/index.php/SDL:Tutorials:Simple_Engine_Framework
 - GCC runtime (ANPM package `gcc-runtime`)
 - SDL2, SDL2_image, SDL2_ttf, SDL2_mixer (ANPM or RPM packages)
 
+**Port Authors**:
+- Gianfilippo Cimmino - First release.
+- Martin Iturbide - SDL2 port.
+
 ### Changes in release 2
 
 - **SDL1 → SDL2 migration**: ported the entire engine from SDL 1.2 to SDL2.
