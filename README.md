@@ -86,3 +86,7 @@ The original source used SDL 1.2. The OS/2 port updates the engine to SDL2:
 - `SDL_DisplayFormat` / `SDL_DisplayFormatAlpha` replaced with `SDL_ConvertSurfaceFormat`.
 - `SDL_SetAlpha` replaced with `SDL_SetSurfaceAlphaMod`.
 - Alt+Enter fullscreen toggle uses `SDL_SetWindowFullscreen(SDL_WINDOW_FULLSCREEN_DESKTOP)` with `SDL_RenderSetLogicalSize` to preserve the 800×600 aspect ratio on any screen.
+
+## Links
+* https://github.com/OS2World/GAME-SDL-PUZZLE-2H4U
+* https://sourceforge.net/projects/toohardforyou/
