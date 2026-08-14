@@ -1,0 +1,58 @@
+INTRODUCTION
+
+
+Merci d'avoir téléchargé 2H4U v1.3.
+
+Ce programme a été testé et compilé sous Windows (XP SP2), Linux (Ubuntu Dapper Drake, Edgy Eft et Feisty Fawn) et partiellement sur Mac Os X.
+
+COMPILATION
+
+Windows : La version compilée est fournie et s'appelle 2H4U.exe. Pour recompiler, installez l'IDE code::blocks, et lancez 2H4U_win.cbp dans scripts. Puis compilez le projet (F9). Il faut auparavant avoir installé les bibliothèques SDL, SDL_image, SDL_ttf et SDL_mixer dans Code::blocks.
+
+Linux : via un terminal, placez vous dans le dossier scripts, et faites "make". Il faut auparavant avoir installé les paquets libsdl1.2-dev, libsdl-image1.2-dev, libsdl-ttf2.0-dev, libsdl-mixer1.2-dev, en utilisant votre gestionnaire de paquets préféré (par exemple Synaptic, ou apt-get).
+
+Mac OS : Le make devrait fonctionner de même que pour Linux (mais cela n'a pas été testé).
+
+Si la gestion du son pose un quelconque problème, vous pouvez la désactiver à la compilation, en décommentant 
+//#define NO_SOUND_2H4U dans le fichier sdl_includes.h.
+
+Nous vous serions reconnaissants de bien vouloir nous informer d'un succès de portage sous un autre système d'exploitation, ainsi que des éventuelles modifications apportées pour y parvenir.
+
+De même, n'hésitez pas à nous informer de toute modification apportée au jeu, dans quelques domaine que ce soit. 
+
+AUTEURS
+
+Ce jeu a été réalisé par l'équipe I4GOT MY BRAIN, entre Mars et Mai 2006.
+
+Il l'a été dans le cadre d'un projet I4 en 2e année du cycle préparatoire de l'INSA de Rouen (école d'ingénieur).
+
+I4GOT MY BRAIN, c'est en fait deux membres :
+Pierre Lagouge (programmeur)
+Pierre-Yves Ricau (programmeur en chef, designer et maintenance).
+
+LICENSE
+
+Ce programme est sous license GPL, consultez le fichier COPYING ou COPYING.txt pour plus d'informations.
+
+Les fichiers Engine.h et Engine.cpp ont été réalisés à partir d'un tutoriel disponible sur :
+http://gpwiki.org/index.php/SDL:Tutorials:Simple_Engine_Framework
+
+CONTACT
+
+Vous pouvez nous contacter par mail aux adresses suivante :
+
+Pierre Lagouge : pierre.lagouge@insa-rouen.fr
+Pierre-Yves Ricau : pierre-yves.ricau@insa-rouen.fr
+
+Merci à Kayl pour l'aide qu'il nous a apporté dans l'organisation du projet, grâce à lui 2H4U a vraiment évolué.
+Vous pouvez le contacter à cet adresse : kayl@kaylnet.com
+
+Merci à nxdev pour la traduction intégrale de l'aide en Anglais, vous pouvez le contacter à l'adresse suivante : xnoxios@yahoo.com
+
+Les pages d'aides ont été réalisées à l'aide du site GeneeWeb :
+
+http://www.geneeweb.com
+
+Adresse email : admin@geneeweb.com
+
+(Nous sommes aussi 2 des 4 membres du projet GeneeWeb).

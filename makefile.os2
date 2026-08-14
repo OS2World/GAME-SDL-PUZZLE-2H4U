@@ -1,0 +1,59 @@
+# makefile.os2 - GCC/EMX makefile for 2H4U under ArcaOS
+#
+# Requires SDL2 from ANPM/RPM.
+# Usage: make -f makefile.os2
+#        make -f makefile.os2 clean
+
+CC      = g++
+
+# os2fix.h neutralizes legacy OS/2 memory-model keywords (_far, _near, _huge,
+# _FAR_).  Shadow headers in project root are intercepted via "-I .":
+#   errno.h  — prevents conflict between GCC's include-fixed/stdlib.h and
+#              the OS/2 system errno.h (re-declares errno with _near).
+#   ctype.h  — provides character classification macros (isdigit, tolower,
+#              etc.) without referencing the __ctype symbol that wlink
+#              cannot resolve from the C runtime import library.
+OS2FIX  = -include sources/os2fix.h
+
+CFLAGS  = -Wall -O2 -Zomf -Zhigh-mem \
+          -I sources \
+          $(OS2FIX) \
+          $(shell sdl2-config --cflags)
+
+export EMXOMFLD_TYPE    = WLINK
+export EMXOMFLD_LINKER  = wl.exe
+export EMXOMFLD_PRELINK = 0
+export EMXOMFLD_SYSTEM  = os2v2_pm
+
+LDFLAGS = -Zomf -Zhigh-mem -Zmap -Zstack 0x10000
+LIBS    = C:/usr/lib/SDL2main.a $(shell sdl2-config --libs) -lSDL2_image -lSDL2_mixer -lSDL2_ttf -lm
+
+SRCS    = sources/main.cpp \
+          sources/engine.cpp \
+          sources/jeu.cpp \
+          sources/terrain.cpp \
+          sources/menu.cpp \
+          sources/intro.cpp \
+          sources/launcher.cpp \
+          sources/highscore.cpp \
+          sources/param.cpp \
+          sources/son.cpp \
+          sources/bonus.cpp \
+          sources/balle.cpp \
+          sources/figure.cpp \
+          sources/brick.cpp
+
+OBJS    = $(SRCS:.cpp=.o)
+
+TARGET  = 2h4u.exe
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(OBJS) $(LIBS)
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+clean:
+	rm -f $(OBJS) *.map $(TARGET)

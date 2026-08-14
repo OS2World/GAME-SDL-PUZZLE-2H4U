@@ -1,0 +1,19 @@
+[ Présente ]
+Jouer
+Musique
+Sons
+Affichage
+Scores
+Quitter
+Scores
+Pièce suivante
+Score
+Niveau
+Lignes à faire
+Lignes
+Réserves
+Game Over
+Pressez
+Entrée
+Pause
+Pressez P

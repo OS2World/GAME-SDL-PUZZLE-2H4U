@@ -1,0 +1,133 @@
+
+body
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+	background-color:#000000;
+	
+}
+
+#corps
+{
+	position: absolute;
+	
+		width: 750px;  
+		left: 50%;
+		margin-left: -375px;
+		
+}
+
+#central
+{
+	margin-top:10px;
+	background-color:#000000;
+	margin-left: 165px;
+	margin-right: 0px;
+	color: #00FF00;
+	padding: 20px;	
+	font-size: medium;
+	font-family: times;
+	
+}
+
+#central a
+{
+	font-size: medium;
+	font-family: times;	
+	color: #0000FF;	
+}
+
+#central h1
+{
+	font-size: x-large;
+	font-family: times;	
+	color: #FF0000;	
+	margin: 0 0 10px 0;
+}
+
+#central h2
+{
+	font-size: medium;
+	font-family: times;	
+	color: #0000FF;	
+	margin: 0 0 10px 0;
+}
+
+#central h3
+{
+	font-size: medium;
+	font-family: times;	
+	color: #0000FF;	
+	margin: 0 0 10px 0;
+}
+
+p
+{
+	margin: 0 0 10px 0;
+}
+
+#bandeau
+{
+	
+	text-align: center; 
+	margin: auto; 
+		
+	width: 798px;
+	height: 285px;
+	background-image: url("images/jeu.JPG");
+	background-repeat: no-repeat;
+}
+#gauche
+{
+	margin-top:10px;
+	position: absolute;
+	left:0;
+	width: 150px;
+	background-color:#000000;
+	
+}		
+
+#gauche h1
+{
+	font-size: large;
+	font-family: times;
+	padding: 20px;
+	color: #FF0000;	
+}
+		
+.menu_gauche
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 20px;
+	padding-top:0;
+}
+
+.menu_gauche li
+{
+	margin-bottom: 5px;
+}
+.menu_gauche a
+{
+	margin: 0 2px;
+	color: #00FF00;
+	font-size: medium;
+	font-family: times;
+	text-decoration: underline;
+}
+.menu_gauche a:hover
+{
+	text-decoration: none;
+}
+
+table
+{
+   border-collapse: collapse;
+}
+td, th
+{
+   border: 1px solid green;
+}
+

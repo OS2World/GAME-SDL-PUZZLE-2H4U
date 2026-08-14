@@ -1,0 +1,19 @@
+[ Presents ]
+Play
+Music
+Sounds
+Display
+Scores
+Quit
+Scores
+Next Shape
+Score
+Level
+Next level
+Lines
+Lives
+Game Over
+Hit
+Return
+Pause
+Hit P
