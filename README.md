@@ -5,6 +5,8 @@
 - **Upstream project**: https://sourceforge.net/p/toohardforyou/
 - **License**: GNU General Public License v2 or later (see `COPYING.txt`)
 
+![2H4U ScreenShot](/doc/2H4U.png)
+
 ---
 
 ## Authors
